@@ -35,7 +35,7 @@ public class RootConfig {
 		sqlSessionFactory.setDataSource(dataSource());
 		sqlSessionFactory
 				.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/**.xml"));
-		sqlSessionFactory.setTypeAliasesPackage("com.bank.coconut");
+		sqlSessionFactory.setTypeAliasesPackage("com.bank.coconut.VO");
 		return (SqlSessionFactory) sqlSessionFactory.getObject();
 	}
 

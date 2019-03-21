@@ -12,7 +12,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.bank.coconut")
-@MapperScan(basePackages = "com.bank.coconut" )
+@MapperScan(basePackages = "com.bank.coconut.mapper" )
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
